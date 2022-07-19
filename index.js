@@ -17,7 +17,7 @@ const fs = require("fs");
 // });
 
 //////////------------FilePaths---------------------
-// const path = require("path");
+const path = require("path");
 // const notes = "/users/zeeshan/Training/node/index.js";
 
 // console.log(path.dirname(notes));
@@ -40,12 +40,28 @@ const fs = require("fs");
 //   console.log(data);
 // });
 
-const content = "Some content!";
+// const content = "Some content!";
 
-fs.writeFile("test.txt", content, { flag: "a+" }, (err) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  console.log("file written successfully");
-});
+// fs.writeFile("test.txt", content, { flag: "a+" }, (err) => {
+//   if (err) {
+//     console.error(err);
+//     return;
+//   }
+//   console.log("file written successfully");
+// });
+
+// const folderPath = "/home/brainx/Training/nodejs";
+
+// console.log(fs.readdirSync("/home/brainx/Training/nodejs"));
+// fs.readdirSync(folderPath).map((fileName) => {
+//   console.log(path.join(folderPath, fileName));
+// });
+
+// dir = "1";
+// fs.rm(dir, { recursive: true, force: true }, (err) => {
+//   if (err) {
+//     throw err;
+//   }
+
+//   console.log(`${dir} is deleted!`);
+// });
